@@ -28,7 +28,7 @@ class FirstScreen : AppCompatActivity() {
         btnLeftHand.text = "< Izquierda"
 
         btnRightHand.setOnClickListener {
-//            intiSensorsDataTable()
+            intiSensorsDataTable()
 
             val intent = Intent(this, SecondScreen::class.java)
             intent.putExtra("RightHand", true)
@@ -37,7 +37,7 @@ class FirstScreen : AppCompatActivity() {
         }
 
         btnLeftHand.setOnClickListener {
-//            intiSensorsDataTable()
+            intiSensorsDataTable()
 
             val intent = Intent(this, SecondScreen::class.java)
             intent.putExtra("RightHand", false)
